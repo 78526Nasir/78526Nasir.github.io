@@ -1,2 +1,2 @@
-# 78526Nasir.github.io
+# Informal Resume Template
 An informal demo resume. 
