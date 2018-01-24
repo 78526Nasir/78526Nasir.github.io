@@ -1,2 +1,2 @@
 # Informal Resume Template
-An informal demo resume. 
+An informal resume template. 
