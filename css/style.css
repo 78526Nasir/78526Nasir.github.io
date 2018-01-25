@@ -209,6 +209,10 @@ body{
     color: black;
 }
 
+.email:hover{
+    background: #ff2222;
+    color:white;
+}
 .copyright{
     text-align: center;
     font:bold 12px consolas;
