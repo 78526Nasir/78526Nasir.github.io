@@ -150,9 +150,14 @@ body{
     margin-bottom: 10px;
 }
 
+.exp-10{
+    margin-top: 10px;
+}
+
 .code{
-    background: #f5f5f5;
+    background: #f7f8f9;
     color:#262c3a;
+    border-radius: 2px;
 }
 
 .link{
@@ -161,11 +166,15 @@ body{
     font:bold 12px consolas;
 }
 
+.link:hover{
+    color:#1166bb !important;
+}
 
 .code-p{
     display: inline-block;
     border-radius: 5px;
     font: 12px consolas;
+    margin-bottom: 5px;
 }
 
 .all-skills{
@@ -178,6 +187,7 @@ body{
     font-weight: normal;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 2px;
 }
 
 .footer{
@@ -187,6 +197,10 @@ body{
 
 .hr{
     margin-bottom: 0px;
+}
+
+.m-b-10{
+    margin-bottom: 10px;
 }
 
 .social{
