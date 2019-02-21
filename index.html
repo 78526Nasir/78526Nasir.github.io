@@ -2,385 +2,338 @@
 <html>
 
 <head>
-    <title>Online Resume</title>
+    <title>Portfolio</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Nasir Islam Sujan">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://use.fontawesome.com/releases/v5.0.10/css/all.css"></script>
+    <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center" style="color:#262c3a;">Resume</h1>
-        <div class="row content">
-            <!-- Left side starts here-->
-            <div class="col-md-3 left">
-                <div class="row">
-                    <div class="pf-image">
-                        <img class="" src="images/me.jpg" alt="My Image">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <h2 class="title">Nasir Islam Sujan</h2>
-                </div>
-
-                <div class="row info">
-                    <p>Polyglot programmer, Machine learning enthusiast. Currently pursuing my B.Sc in Software Engineering
-                        at Daffodil International University. </p>
-                </div>
-
-                <div class="row title" style="margin-top:10px;">
-                    <h3>Skills</h3>
-                    <div class="all-skills">
-                        <div class="con">
-                            <div class="C">
-                            <span class="lang">C</span> 
-                            <span class="skills">90%</span>
-                            </div>
-                        </div>
-
-                        <div class="con">
-                            <div class="java">
-                                <span class="lang">Java</span> 
-                            <span class="skills">95%</span>
-                            </div>
-                        </div>
-
-                        <div class="con">
-                            <div class="Cs">
-                            <span class="lang">C#</span> 
-                            <span class="skills">90%</span>
-                            </div>
-                        </div>
-
-                        <div class="con">
-                            <div class="ASP-NET">
-                            <span class="lang">ASP.NET</span> 
-                            <span class="skills">85%</span>
-                            </div>
-                        </div>
-
-                        <div class="con">
-                            <div class="python">
-                                <span class="lang">Python</span> 
-                            <span class="skills">50%</span>
-                            </div>
-                        </div>
-
-                        <div class="con">
-                            <div class="front-end">
-                                <span class="lang">HTML5, CSS3 , JavaScript</span> 
-                                <span class="skills">90%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row current-tech" style="margin-top:15px;">
-                    <h3 class="title">Currently Working On</h3>
-                    <span class="badge bg-green cwt">C#</span>
-                    <span class="badge bg-blue cwt">ASP.NET</span>
-                    <span class="badge bg-yellow cwt">JavaScript</span>
-                    <span class="badge bg-violet cwt">Python</span>
-                    <span class="badge bg-purple cwt">Machine Learning</span>
-                    <span class="badge bg-black cwt">AI</span>
-                </div>
-
-                <div class="row interested" style="margin-top:20px;">
-                    <h3 class="title">Interested Topic</h3>
-                    <span class="badge bg-orange cwt">Data Science</span>
-                    <span class="badge bg-dark-black cwt">Deep Learning</span>
-                    <span class="badge bg-purple cwt">Machine Learning</span>
-                </div>
+    <header id="header">
+        <div class="header-container container">
+            <div class="left">
+                <a class="link prevent-default" href="#main">
+                    <h1>Portfolio</h1>
+                </a>
             </div>
-            <!-- Left side ends here-->
-            
-            <!-- Right side starts here-->
-            <div class="col-md-9 right" style="overflow-x: auto;">
-                <div class="row" style="margin-right:0px;">
-                    <!-- Previous exprience starts here-->
-                    <div class="row">
-                        <h2 class="title">Previous Experience</h2>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#main">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
 
-                        <div class="experiences">
-                            <a class="" data-toggle="collapse" href="#prevExDesp1">
-                                <span class="badge bg-purple exp">A2R <span class="caret" style="border-top-color:white"></span></span>
-                            </a>
-
-                            <div class="collapse in desp" id="prevExDesp1">
-                                <code class="code">A2R</code>, a class routine finder, that can find out specific class routine/schedule 
-                                for any students of my Software Engineering department. It basically read the Excel <code class="code">.xlsx</code>
-                                 routine file and than filter out all the routines.
-
-                                <br/>
-                                <p class="code-p" style="margin-top:10px;">Project Repository: 
-                                    <a class="link" href="https://github.com/78526Nasir/A2R" target="_blank">
-                                    A2R repository
-                                    </a>
-                                </p>
-                                <br/>
-
-                                <p class="code-p">Project Documentation: 
-                                    <a class="link" href="https://sites.google.com/view/a2r" target="_blank">
-                                        A2R Documentation
-                                    </a>
-                                </p>
-                                <br/>
-                                <p class="code-p m-b-10">Video Documentation: 
-                                    <a class="link" href="https://youtu.be/TXmE8lAUgvg" target="_blank">
-                                        A2R Video Documentation
-                                    </a>
-                                </p>
-
-                                <br/>
-                                <b style="font-size:12px">Using Languages and Technologies: </b> 
-                                <span class="badge badge-span bg-l-black"> C# </span> 
-                                <span class="badge badge-span bg-l-black"> ASP.NET</span>
-                                <span class="badge badge-span bg-l-black"> OLEDB</span>
-                                <span class="badge badge-span bg-l-black"> Linq</span>
-                                <span class="badge badge-span bg-l-black"> JavaScript</span>
-                                <span class="badge badge-span bg-l-black"> SQL</span>
-                                
-                            </div>
-                        </div>
-
-                        <div class="experiences">
-                            <a class="" data-toggle="collapse" href="#prevExDesp2">
-                                <span class="badge bg-purple exp">FrontCode <span class="caret" style="border-top-color:white"></span></span>
-                            </a>
-            
-                            <div class="collapse in desp" id="prevExDesp2">
-                                A place to learn <code class="code">front-end</code> technologies.
-                                <br/>
-
-                                <p class="code-p" style="margin-top:10px;">Project Repository: 
-                                    <a class="link" href="https://github.com/78526Nasir/FrontCode" target="_blank">
-                                        FrontCode Repository
-                                    </a>
-                                </p>
-                                <br/>
-
-                                <p class="code-p m-b-10">Project Documentation: 
-                                    <a class="link" href="https://github.com/78526Nasir/FrontCode/blob/master/README.md" target="_blank">
-                                        FrontCode Documentation
-                                    </a>
-                                </p>
-                                <br/>
-                                <b style="font-size:12px">Using Languages and Technologies: </b> 
-                                <span class="badge badge-span bg-l-black">C#</span> 
-                                <span class="badge badge-span bg-l-black">ASP.NET</span> 
-                                <span class="badge badge-span bg-l-black">JavaScript</span> 
-                                <span class="badge badge-span bg-l-black">AJAX</span> 
-                                <span class="badge badge-span bg-l-black">SQL</span> 
-                            </div>
-                        </div>
-
-                        <div class="experiences">
-                            <a class="" data-toggle="collapse" href="#prevExDesp3">
-                                <span class="badge bg-purple exp">E-Buy <span class="caret" style="border-top-color:white"></span></span>
-                            </a>
-            
-                            <div class="collapse desp" id="prevExDesp3">
-                                An <code class="code">e-commerce</code> website developed in <code class="code">ASP.NET</code>
-                                <br/>
-
-                                <p class="code-p" style="margin-top:10px;">Project Repository: 
-                                    <a class="link" href="https://github.com/78526Nasir/EBuy" target="_blank">
-                                        EBuy Repository
-                                    </a>
-                                </p>
-                                <br/>
-
-                                <p class="code-p">Project Documentation: 
-                                    <a class="link" href="https://sites.google.com/view/doc-ebuy" target="_blank">
-                                        EBuy Documentation
-                                    </a>
-                                </p>
-                                <br/>
-                                <p class="code-p">Project Video Documentation: 
-                                    <a class="link" href="https://youtu.be/BYWlrxLEG5g" target="_blank">
-                                        EBuy Video Documentation
-                                    </a>
-                                </p>
-                                <br/>
-
-                                <b style="font-size:12px">Using Languages and Technologies: </b> 
-                                <span class="badge badge-span bg-l-black">C#</span> 
-                                <span class="badge badge-span bg-l-black">ASP.NET</span> 
-                                <span class="badge badge-span bg-l-black">JavaScript</span> 
-                                <span class="badge badge-span bg-l-black">AJAX</span> 
-                                <span class="badge badge-span bg-l-black">SQL</span> 
-                            </div>
-                        </div>
-
-                        <div class="experiences">
-                            <a class="" data-toggle="collapse" href="#prevExDesp4">
-                                <span class="badge bg-purple exp">A2R [Desktop Verion] <span class="caret" style="border-top-color:white"></span></span>
-                            </a>
-            
-                            <div class="collapse desp" id="prevExDesp4">
-                                A2R (Access To Routine), a class routine finder.
-                                <br/>
-
-                                <p class="code-p" style="margin-top:10px;">Project Repository: 
-                                    <a class="link" href="https://github.com/78526Nasir/AccessToRoutine" target="_blank">
-                                        A2R [Desktop Version] Repository
-                                    </a>
-                                </p>
-                                <br/>
-
-                                <p class="code-p">Project Documentation: 
-                                    <a class="link" href="https://sites.google.com/diu.edu.bd/a2r" target="_blank">
-                                        A2R [Desktop Version] Documentation
-                                    </a>
-                                </p>
-                                <br/>
-
-                                <p class="code-p m-b-10">Video Documentation: 
-                                    <a class="link" href="https://youtu.be/658dF4Ml7S8" target="_blank">
-                                        A2R [Desktop Version] Video Documentation
-                                    </a>
-                                </p>
-                                <br/>
-
-                                <p class="code-p m-b-10">Project Wiki: 
-                                    <a class="link" href="https://github.com/78526Nasir/AccessToRoutine/wiki" target="_blank">
-                                        A2R [Desktop Version] Wiki
-                                    </a>
-                                </p>
-                                <br/>
-
-                                <b style="font-size:12px">Using Languages and Technologies: </b> 
-                                <span class="badge badge-span bg-l-black">Java</span> 
-                                <span class="badge badge-span bg-l-black">Apache POI</span> 
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- Previous experience ends here-->
-
-
-                    <!-- Current experience starts here-->
-                        <div class="row">
-                            <div class="current-exp">
-                                <h2 class="title">Current Experience</h2>
-                                <a class="" data-toggle="collapse" href="#currExDesc1">
-                                    <span class="badge bg-violet exp exp-10" style="padding-top:5px;">
-                                        পাইথন ও মেটল্যাবে মেশিন লার্নিং 
-                                    <span class="caret" style="border-top-color:white"></span>
-                                </a>
-                                
-                                <div class="collapse in desp" id="currExDesc1">
-                                    <p>Currently i am on the last stage of this <code class="code">Open Source
-                                        <a href="http://ml.howtocode.com.bd/" target="_blank">course</a></code>.</p>
-                                </div>
-                            </div>
-
-                            <div class="current-exp">
-                                <a class="" data-toggle="collapse" href="#currExDesc2">
-                                    <span class="badge bg-violet exp exp-10">
-                                        Introduction to Machine Learning 
-                                        <span class="caret" style="border-top-color:white"></span>
-                                    </span> 
-                                </a>
-
-                                <div class="collapse in desp" id="currExDesc2">
-                                    <p>Trying to complete this free course from  <code class="code">
-                                        <a href="https://classroom.udacity.com/courses/ud120/lessons/2254358555/concepts/22853385400923" target="_blank">Udacity</a></code>.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="current-exp">
-                                <a class="" data-toggle="collapse" href="#currExDesc3">
-                                        <span class="badge bg-violet exp exp-10">
-                                            Introduction to JavaScript 
-                                        <span class="caret" style="border-top-color:white"></span>
-                                    </span> 
-                                </a>
-
-                                <div class="collapse in desp" id="currExDesc3">
-                                    <p>Currently i am on the middle stage of this <code class="code">
-                                        <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">course</a></code>.</p>
-                                </div>
-                            </div>
-
-                            <div class="current-exp">
-                                <a class="" data-toggle="collapse" href="#currExDesc4">
-                                        <span class="badge bg-violet exp exp-10">
-                                            The Complete 2018 Fullstack Web Developer Course 
-                                        <span class="caret" style="border-top-color:white"></span>
-                                    </span> 
-                                </a>
-
-                                <div class="collapse in desp" id="currExDesc4">
-                                    <p>Trying to complete this <code class="code">
-                                        <a href="https://www.udemy.com/thecompletewebdeveloper/" target="_blank">course</a></code>.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    <!-- Current experience ends here-->
-
-                    <!-- Achivement starts here-->
-                    <div class="row">
-                        <h2 class="title">Recent Achivement</h2>
-                        
-                        <span class="badge bg-green exp exp-10">Winner</span>
-                        
-                        <div class="desp">
-                            <p>Winner of <code class="code">Fall-2017</code> Project Fair.
-                                Winning project video <a href="https://www.youtube.com/watch?v=658dF4Ml7S8" target="_blank">documentation</a>.</p>
-                        </div>
-
-                        <span class="badge bg-green exp exp-10" style="margin-top:10px">Winner</span>
-
-                        <div class="desp">
-                            <p><code class="code">Winner</code> on <b>DIU ICT carnival 2018</b> project showcasing. <code class="code">(Desktop Application)</code></p>
-                        </div>
-                    </div>
-                    <!--Achivement ends here -->
-
-                    <!-- Other activities start here-->
-                    <div class="row">
-                        <h2 class="title">Other Activities</h2>
-                        <span class="badge bg-red exp exp-10">Youtubing</span>
-                        <p>I have a <code class="code"><a href="https://www.youtube.com/channel/UCQTjGyE260r94ynmAs6-VwQ" target="_blank">YouTube</a></code> channel on programming and it's related topic.</p>
-                    </div>
-                    <!-- Other activities ends here-->
-                </div>
-            </div>
-            <!-- Right side ends here-->
-            
-            <!-- Footer section starts here-->
-            <div class="col-md-12">
-                <div class="row footer">
-                    <hr class="hr">
-
-                    <div class="">
-                        <h4 class="title">Contact</h4>
-                        <div class="social-link">
-                            <a href="https://www.linkedin.com/in/nasir-islam-sujan-11497b113/" target="_blank"><span class="fa fa-linkedin social linkedin"></span></a>
-                            <a href="https://github.com/78526Nasir" target="_blank"><span class="fa fa-github social github"></span></a>
-                            <a href="islam35-1102@diu.edu.bd"><span class="fa fa-envelope social email"></span></a>
-                        </div>
-                    </div>
-                </div>
-           </div>
-           <!-- Footer section ends here-->
+        </div>
+    </header>
+    <main id="main">
+        <div id="welcome-section">
+            <h1>Hi ! i'am Nasir Islam Sujan</h1>
         </div>
 
-        <p class="copyright">This page was developed by <a style="color:black" href="https://github.com/78526Nasir" target="_blank">
-            Nasir Islam Sujan</a> &copy; 2018</p>
+        <div id="about">
+            <h1 class="title">About</h1>
+            <div id="info">
+                <img src="https://res.cloudinary.com/nasir78526/image/upload/q_100/v1525105025/me_sev0dr.jpg" alt="My Image">
+                <h1 id="name">Nasir Islam Sujan</h1>
+                <p>Machine Learning Practitioner | Polyglot Programmer | ASP.NET, C# Developer | Web UI/UX designer | Passionaten about Data Security </p>
+            </div>
+        </div>
+    </main>
+
+    <div id="skills">
+        <div>
+            <h1 class="title">Skills</h1>
+        </div>
+
+        <div id="skillChart">
+            <div class="box">
+                <div class="chart" data-percent="75" data-bar-color="#FF9800">75%</div>
+                <span>Machine Learning</span>
+            </div>
+          
+            <div class="box">
+                <div class="chart" data-percent="25" data-bar-color="#E91E63">25%</div>
+                <span>Deep Learning</span>
+            </div>
+          
+            <div class="box">
+                <div class="chart" data-percent="85" data-bar-color="#3572A5">85%</div>
+                <span>Python</span>
+            </div>
+
+            <div class="box">
+                <div class="chart" data-percent="85" data-bar-color="#007BFF">85%</div>
+                <span>ASP.NET, C#</span>
+            </div>
+
+            <div class="box">
+                <div class="chart" data-percent="85" data-bar-color="#B07219">85%</div>
+                <span>Java</span>
+            </div>
+
+            <div class="box">
+                <div class="chart" data-percent="70" data-bar-color="#FFD900">70%</div>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="box">
+                <div class="chart" data-percent="95" data-bar-color="#4caf50">95%</div>
+                <span>Responsive Design</span>
+            </div>
+            
+            <div class="box">
+                <div class="chart" data-percent="80" data-bar-color="#595959">80%</div>
+                <span>C</span>
+            </div>
+        </div>
     </div>
+
+    <div id="projects">
+        <div>
+            <h1 class="title rm-mgb">ASP.NET Projects</h1>
+        </div>
+        <div id="project-container">
+            <div class="card">
+                <div class="head">
+                    <h1 class="project-titl">FrontCode</h1>
+                    <p>A place to learn FrontEnd Technologies</p>
+                </div>
+                <div class="card-body">
+                    <h3>Description</h3>
+                    <p>
+                        <span style="font-weight: 700">FrontCode</span> is an online web platform, where user can learn Front-End Technologies like HTML,
+                        CSS, and JavaScript etc.
+                    </p>
+                    <h5>Using Language and Technologies</h5>
+
+                    <div class="tech">
+                        <code>C#</code>
+                        <code>ASP.NET</code>
+                        <code>SQL</code>
+                        <code>JavaScript</code>
+                        <code>AJAX</code>
+                    </div>
+
+                    <div class="submit">
+                        <a class="view" href="https://github.com/78526Nasir/FrontCode" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="head a2r-head">
+                    <h1 class="project-titl">A2R</h1>
+                    <p>A class routine finder</p>
+                </div>
+                <div class="card-body">
+                    <h3>Description</h3>
+                    <p>
+                        <span style="font-weight: 700">A2R</span> is a class routine finder that can find out specific class schedule/routine for any students
+                        of my Software Engineering Department.
+                    </p>
+                    <h5>Using Language and Technologies</h5>
+
+                    <div class="tech">
+                        <code>C#</code>
+                        <code>ASP.NET</code>
+                        <code>SQL</code>
+                        <code>JS</code>
+                        <code>AJAX</code>
+                        <code>OLEDB</code>
+                        <code>Linq</code>
+                    </div>
+
+                    <div class="submit">
+                        <a class="view" href="https://github.com/78526Nasir/A2R" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="head ebuy-head">
+                    <h1 class="project-titl">Ebuy</h1>
+                    <p>An e-commerce website</p>
+                </div>
+                <div class="card-body">
+                    <h3>Description</h3>
+                    <p>
+                        <span style="font-weight: 700">EBuy</span> is an online platform for buying, selling goods or services.
+                    </p>
+                    <h5>Using Language and Technologies</h5>
+
+                    <div class="tech">
+                        <code>C#</code>
+                        <code>ASP.NET</code>
+                        <code>SQL</code>
+                        <code>JavaScript</code>
+                        <code>AJAX</code>
+                    </div>
+
+                    <div class="submit">
+                        <a class="view" href="https://github.com/78526Nasir/EBuy" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="title rm-mgb">ML Projects</h1>
+
+        <div id="ml-projects">
+
+            <div class="card">
+                <div class="head titan-head">
+                    <h1 class="project-titl">iDTi-CSsmoteB</h1>
+                    <p>Research (Bioinformatics)</p>
+                </div>
+                <div class="card-body">
+                    <h3>Description</h3>
+                    <p style="min-height: 60px">
+                        <span style="font-weight: 700">iDTi-CSsmoteB</span>, Identification of Drug-Target Interaction based on Drug Chemical Structure
+and Protein Sequence using XGBoost with Over-sampling Technique SMOTE.
+                    </p>
+                    <h5>Using Language & Technolgies</h5>
+
+                    <div class="tech">
+                        <code>python</code>
+                        <code>pybiomed</code>
+                    </div>
+
+                    <div class="submit">
+                        <a class="view" href="http://idticssmoteb-uestc.me" target="_blank">View Web Server</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="head sap-head">
+                    <h1 class="project-tile">Employee Attrition</h1>
+                    <p>Undergraduate Thesis</p>
+                </div>
+                <div class="card-body">
+                    <h3>Description</h3>
+                    <p>
+                        <span style="font-weight: 700">Employee Attrition</span>: Key Factors of Employee Attrition: A comparisons between Supervised Feature Selection and Unsupervised Dimensionality Reduction techniques.
+                    </p>
+                    <h5>Using Language and Technologies</h5>
+
+                    <div class="tech">
+                        <code>python</code>
+                    </div>
+
+                    <div class="submit">
+                        <a class="view" href="https://bitbucket.org/78526Nasir/employee-attrition" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="head sap-head">
+                    <h1 class="project-tile">DengAI</h1>
+                    <p>Research Project</p>
+                </div>
+                <div class="card-body">
+                    <h3>Description</h3>
+                    <p>
+                        <span style="font-weight: 700">DengAI</span>: A Predictive Model for Dengue Fever Spreading Detection using Multiple Supervised Machine Learning Algorithm.
+                    </p>
+                    <h5>Using Language and Technologies</h5>
+
+                    <div class="tech">
+                        <code>python</code>
+                    </div>
+
+                    <div class="submit">
+                        <a class="view" href="https://bitbucket.org/78526Nasir/dengai" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact">
+        <h1 class="title">Contact</h1>
+        <div id="contact-container">
+            <div class="profile-card">
+                <div class="head">
+                    <img src="https://res.cloudinary.com/nasir78526/image/upload/v1525105025/me_sev0dr.jpg" alt="my image">
+                    <div class="name-bio">
+                        <h2>Nasir Islam Sujan</h2>
+                        <p>Polyglot Programmer</p>
+                    </div>
+                </div>
+                <div class="info">
+                   Software Developer with 2 years of strong academic experience on Web Design and Development. Started working on Machine Learning and its applied fields from last one an half year.
+                </div>
+
+                <hr/>
+
+                <div class="footer">
+                    <a href="mailto:islam35-1102@diu.edu.bd" target="_blank">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a id="profile-link" href="https://github.com/78526Nasir" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nasir-islam-sujan/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://stackoverflow.com/users/6930003/nasir-islam-sujan" target="_blank">
+                        <i class="fab fa-stack-overflow"></i>
+                    </a>
+                    <a href="https://bitbucket.org/78526Nasir/" target="_blank">
+                      <i class="fab fa-bitbucket"></i>
+                    </a>
+                    <a href="https://www.urionlinejudge.com.br/judge/en/profile/263849r" target="_blank">
+                        <i class="fas fa-gavel"></i>
+                    </a>
+                    <a href="https://codepen.io/78526Nasir" target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>This Portfolio page designed by
+            <a href="https://github.com/78526Nasir" target="_blank">Nasir Islam Sujan</a> &copy; 2018
+        </p>
+    </footer>
+
+    <div id="fixed-float">
+        <a href="#main" class="link prevent-default">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
 </body>
 
 </html>
